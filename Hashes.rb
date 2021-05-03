@@ -3,3 +3,5 @@ provinces={
     "New York"=> "NY",
     :Oregon=> "OR"
 }
+
+puts states[:Pennsylvania]
