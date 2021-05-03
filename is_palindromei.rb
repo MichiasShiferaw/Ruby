@@ -9,3 +9,9 @@ def is_palindrome(word)
     if (back!=front)
       return false
     end
+    index+=1
+  end
+  return true
+    
+
+end
