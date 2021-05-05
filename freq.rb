@@ -4,3 +4,7 @@ def frequent_letters(string)
     #puts count
     freq=[]
     count.each do |k,v|
+
+        if v>2
+            freq<<k 
+        end
