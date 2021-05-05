@@ -16,3 +16,10 @@ def frequent_letters(string)
 
 
 end
+=begin
+practice output
+  print frequent_letters('mississippi') #=> ["i", "s"]
+  puts
+  print frequent_letters('bootcamp') #=> []
+  puts
+=end
