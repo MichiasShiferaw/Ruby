@@ -10,3 +10,9 @@ def frequent_letters(string)
         end
     end
     return freq
+
+
+
+
+
+end
