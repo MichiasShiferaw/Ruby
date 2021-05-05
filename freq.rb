@@ -8,3 +8,5 @@ def frequent_letters(string)
         if v>2
             freq<<k 
         end
+    end
+    return freq
