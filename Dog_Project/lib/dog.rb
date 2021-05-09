@@ -26,3 +26,11 @@ class Dog
             @bark.downcase
         end
     end   
+
+    def age=(new_age)
+        @age=new_age
+    end
+
+    def favorite_foods
+        @favorite_foods
+    end    
