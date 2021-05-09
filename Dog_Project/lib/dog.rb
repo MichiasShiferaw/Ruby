@@ -18,3 +18,11 @@ class Dog
     def age
         @age
     end
+
+    def bark
+        if self.age>3
+            @bark.upcase
+        else
+            @bark.downcase
+        end
+    end   
