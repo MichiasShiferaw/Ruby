@@ -41,3 +41,20 @@ describe "Dog" do
       expect(dog.age).to eq(42)
     end
   end  
+  
+
+  describe "#bark" do
+    it "should return the dog's uppercase bark if the dog's age is greater than 3" do
+      dog.age = 5
+      expect(dog.bark).to eq("BORK!")
+    end
+
+    it "should return the dog's lowercase bark if the dog's age is less than or equal to 3" do
+      dog.age = 3
+      expect(dog.bark).to eq("bork!")
+
+      dog.age = 2
+      expect(dog.bark).to eq("bork!")
+    end
+  end  
+  
