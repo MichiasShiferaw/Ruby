@@ -6,3 +6,7 @@ class Dog
         @bark=bark
         @favorite_foods=favorite_foods
     end
+
+    def name
+        @name
+    end    
