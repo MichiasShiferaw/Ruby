@@ -34,3 +34,15 @@ class Dog
     def favorite_foods
         @favorite_foods
     end    
+    
+    def favorite_food?(str1)
+
+        @favorite_foods.each do |i|
+            if i.downcase.include?(str1.downcase)
+                return true
+            end
+        end
+        return false
+
+
+    end    
