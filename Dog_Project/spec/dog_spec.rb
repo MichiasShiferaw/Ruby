@@ -58,3 +58,22 @@ describe "Dog" do
     end
   end  
   
+
+  describe "#favorite_foods" do
+    it "should return the dog's favorite_foods instance variable" do
+      expect(dog.favorite_foods).to be(dog.instance_variable_get(:@favorite_foods))
+    end
+  end
+
+  describe "#favorite_food?" do
+    it "should accept a food item (string) as a parameter and return a boolean indicating whether the dog's @favorite_foods contain that food item" do
+      expect(dog.favorite_food?("Bacon")).to eq(true)
+      expect(dog.favorite_food?("Banana")).to eq(false)
+    end
+
+    it "should match food items regardless of capitalization" do
+      expect(dog.favorite_food?("bacon")).to eq(true)
+      expect(dog.favorite_food?("ChIckEn")).to eq(true)
+    end
+  end
+end
