@@ -22,3 +22,22 @@ describe "Dog" do
       expect(dog.name).to be(dog.instance_variable_get(:@name))
     end
   end    
+
+  describe "#breed" do
+    it "should get (return) the dog's breed instance variable" do
+      expect(dog.breed).to be(dog.instance_variable_get(:@breed))
+    end
+  end
+
+  describe "#age" do
+    it "should get (return) the dog's age instance variable" do
+      expect(dog.age).to be(dog.instance_variable_get(:@age))
+    end
+  end
+
+  describe "#age=" do
+    it "should set the dog's age instance variable to a new number" do
+      dog.age = 42
+      expect(dog.age).to eq(42)
+    end
+  end  
