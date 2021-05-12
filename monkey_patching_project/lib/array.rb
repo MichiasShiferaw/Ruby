@@ -26,3 +26,16 @@ class Array
         self.sort![length/2]
     end
   end
+
+  def counts
+    hashie={}
+    self.each do |key|
+      if hashie.has_key?(key)
+        hashie[key]+=1
+      else
+        hashie[key]=1
+      end
+    end
+
+    hashie
+  end
