@@ -9,3 +9,12 @@ class Hangman
     @attempted_chars=[]
     @remaining_incorrect_guesses=5
   end
+
+  def self.random_word
+    DICTIONARY.sample
+    #DICTIONARY[rand(0..DICTIONARY.length)]
+  end
+
+  def attempted_chars
+    @attempted_chars
+  end
