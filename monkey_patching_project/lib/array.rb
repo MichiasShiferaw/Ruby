@@ -60,7 +60,7 @@ class Array
   def my_uniq
     newArray=Array.new
     self.each do |item|
-      if !newArray.include?(item)
+      if (!newArray.include?(item))
         newArray<<item
       end
     end
