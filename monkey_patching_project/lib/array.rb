@@ -66,3 +66,19 @@ class Array
     end
     newArray
   end
+
+
+
+  def my_transpose
+    finaloutput=Array.new
+    newArray=Array.new
+    for index in (0...self[0].length) do
+      newArray=Array.new
+      for index2 in (0...self.length) do
+        newArray<<self[index2][index]
+      end
+      finaloutput<<newArray
+    end
+    finaloutput
+  end
+end
