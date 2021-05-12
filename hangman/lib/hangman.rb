@@ -26,3 +26,11 @@ class Hangman
   def guess_word
     @guess_word
   end
+  def secret_word
+    @secret_word
+  end
+
+  def already_attempted?(char)
+    @attempted_chars.include?(char)
+
+  end
