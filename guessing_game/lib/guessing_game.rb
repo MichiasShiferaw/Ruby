@@ -34,3 +34,9 @@ class GuessingGame
     def num_attempts
         @num_attempts
     end
+
+    def secret_num
+        @secret_num
+    end
+
+end
