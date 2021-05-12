@@ -39,3 +39,30 @@ class Array
 
     hashie
   end
+
+  def my_count(str1)
+    if (self.counts[str1]==nil)
+      return 0
+    end
+    self.counts[str1]
+  end
+
+  def my_index(str1)
+
+    self.each_with_index do |i, index|
+      if i ==str1
+        return index
+      end
+    end
+    return nil
+  end
+
+  def my_uniq
+    newArray=Array.new
+    self.each do |item|
+      if !newArray.include?(item)
+        newArray<<item
+      end
+    end
+    newArray
+  end
