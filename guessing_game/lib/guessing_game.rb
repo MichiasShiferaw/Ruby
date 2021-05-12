@@ -26,3 +26,11 @@ class GuessingGame
         check_num(num)
     end
     
+    
+    def game_over?
+        @game_over
+    end
+
+    def num_attempts
+        @num_attempts
+    end
