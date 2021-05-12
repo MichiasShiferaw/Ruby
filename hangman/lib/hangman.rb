@@ -34,3 +34,14 @@ class Hangman
     @attempted_chars.include?(char)
 
   end
+  def get_matching_indices(char)
+    newArray=[]
+    secret_word.split("").each_with_index{|item,index| newArray<<index if char ==item}
+    newArray
+  end
+
+  def fill_indices(char,array1)
+    array1.each do |i|
+      @guess_word[i]=char
+    end
+  end
