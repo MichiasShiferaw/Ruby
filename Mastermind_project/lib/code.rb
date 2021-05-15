@@ -18,3 +18,6 @@ class Code
       raise "pegs are invalid"
     end
   end
+  def pegs
+    @pegs
+  end
