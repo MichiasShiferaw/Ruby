@@ -33,3 +33,8 @@ class Code
     Code.new(str1.split(""))
 
   end
+
+  def [](position)
+
+    @pegs[position]
+  end
