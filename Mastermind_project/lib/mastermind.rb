@@ -21,3 +21,15 @@ class Mastermind
         puts "near matches: #{@secret_code.num_near_matches(instance)}"
 
     end
+
+
+    def ask_user_for_guess
+        #debugger
+        p "Enter a code"
+        input = gets.chomp
+        guess=Code.from_string(input)
+        print_matches(guess)
+        return @secret_code==guess
+        #return input==@secret_code
+
+    end      
