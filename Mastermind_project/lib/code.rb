@@ -27,3 +27,9 @@ class Code
     length.times{random_peg <<POSSIBLE_PEGS.keys.sample}
     Code.new(random_peg)
   end
+
+  def self.from_string(str1)
+
+    Code.new(str1.split(""))
+
+  end
