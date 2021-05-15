@@ -53,3 +53,17 @@ class Code
     count
 
   end
+
+    def num_near_matches(guess)
+    count=0
+    #debugger
+    (0...guess.length).each do |i|
+      #p @pegs[(i+1)% guess.length]
+      if guess[i]==@pegs[(i+1)% guess.length]||guess[i]==@pegs[(i-1)% guess.length]
+        count+=1
+      end
+    end
+
+    count
+
+  end
