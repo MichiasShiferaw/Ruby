@@ -21,3 +21,9 @@ class Code
   def pegs
     @pegs
   end
+
+  def self.random(length)
+    random_peg=[]
+    length.times{random_peg <<POSSIBLE_PEGS.keys.sample}
+    Code.new(random_peg)
+  end
