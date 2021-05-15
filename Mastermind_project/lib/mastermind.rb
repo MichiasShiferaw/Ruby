@@ -33,3 +33,8 @@ class Mastermind
         #return input==@secret_code
 
     end      
+
+
+
+
+end
