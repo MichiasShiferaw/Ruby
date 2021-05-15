@@ -67,3 +67,9 @@ class Code
     count
 
   end
+
+  def ==(instance)
+    self.pegs==instance.pegs
+  end
+
+end
