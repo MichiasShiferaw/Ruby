@@ -38,3 +38,7 @@ class Code
 
     @pegs[position]
   end
+
+  def length
+    @pegs.length
+  end
