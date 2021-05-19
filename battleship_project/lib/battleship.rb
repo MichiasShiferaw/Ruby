@@ -9,3 +9,11 @@ class Battleship
         @board=Board.new(n)
         @remaining_missing=@board.size*0.5
     end
+
+    def board
+        @board
+    end
+
+    def player
+        @player
+    end
