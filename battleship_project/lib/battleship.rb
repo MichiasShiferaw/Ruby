@@ -24,5 +24,13 @@ class Battleship
         @board.print
     end
 
+    def lose?
+        if @remaining_misses<=0
+            return true
+        else
+            return false
+
+        end
+    end
 
             
