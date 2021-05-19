@@ -23,3 +23,6 @@ class Battleship
         p @board.num_ships
         @board.print
     end
+
+
+            
