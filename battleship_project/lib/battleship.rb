@@ -17,3 +17,9 @@ class Battleship
     def player
         @player
     end
+
+    def start_game
+        @board.place_random_ships
+        p @board.num_ships
+        @board.print
+    end
