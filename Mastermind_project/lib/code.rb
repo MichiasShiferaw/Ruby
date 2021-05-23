@@ -6,7 +6,7 @@ class Code
     "R" => :red,
     "G" => :green,
     "B" => :blue,
-    "Y" => :yello
+    "Y" => :yellow
   }
   def self.valid_pegs?(arr1)
     return arr1.all? {|letter| POSSIBLE_PEGS.has_key?(letter.upcase)}
