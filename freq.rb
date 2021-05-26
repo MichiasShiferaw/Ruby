@@ -13,7 +13,6 @@ def frequent_letters(string)
 
 
 
-
 end
 =begin
 practice output
