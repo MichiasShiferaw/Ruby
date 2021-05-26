@@ -12,7 +12,6 @@ def frequent_letters(string)
     return freq
 
 
-
 end
 =begin
 practice output
