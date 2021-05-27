@@ -42,3 +42,32 @@ def lucas_number(n)
     lucas_number(n-2)+lucas_number(n-1)
 
 end
+# Write a method, sum_array(array), that takes in an array of numbers.
+# The method should return the total sum of the elements.
+# 
+# Solve this recursively!
+#
+# Examples:
+#
+# sum_array([])             # => 0
+# sum_array([5])            # => 5
+# sum_array([5, 2])         # => 7
+# sum_array([4, 10, -1, 2]) # => 15
+def sum_array(array)
+   
+    return 0 if array.size()==0
+    array.shift+sum_array(array)
+
+end
+
+# Write a method, reverse_string(str), that takes in a string.
+# The method should return the string with it's characters in reverse order.
+#
+# Solve this recursively!
+#
+# Examples:
+# 
+# reverse_string("")            # => ""
+# reverse_string("c")           # => "c"
+# reverse_string("internet")    # => "tenretni"
+# reverse_string("friends")     # => "sdneirf"
