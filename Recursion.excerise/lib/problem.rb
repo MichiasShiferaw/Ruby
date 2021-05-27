@@ -29,3 +29,16 @@ end
 # Solve this recursively!
 #
 # Examples:
+#
+# lucas_number(0)   # =>    2
+# lucas_number(1)   # =>    1
+# lucas_number(2)   # =>    3
+# lucas_number(3)   # =>    4
+# lucas_number(5)   # =>    11
+# lucas_number(9)   # =>    76
+def lucas_number(n)
+    return 2 if n==0
+    return 1 if n==1
+    lucas_number(n-2)+lucas_number(n-1)
+
+end
