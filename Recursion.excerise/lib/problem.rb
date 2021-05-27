@@ -88,3 +88,37 @@ end
 #  - look up the documentation for how to check if data is an array or not
 #
 # Examples:
+#
+# array_1 = [1, 2, [[3, 4], [5, [6]]], [7, 8]]
+# flatten(array_1)      # => [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+#
+# array_2 = ['this', ['problem', 'is'], [['pretty', 'tough'], [[':)']]]]
+# flatten(array_2)      # => [ 'this', 'problem', 'is', 'pretty', 'tough', ':)' ]
+#
+# flatten('base case')  # => [ 'base case' ]
+#
+# Another Hint:
+#
+# From the last example, you may be confused. We said that the method takes
+# in an array as an arg, but we passed it a string?
+# If data is not an array, then we can consider it as a 0-dimensional array.
+#     0-dimensional array: 'some data'
+#     1-dimensional array: ['some data']
+#     2-dimensional array: [['some data']]
+#     3-dimensional array: [[['some data']]]
+def flatten(data)
+   # debugger
+    #p data[3]
+    #p data[0].is_a?(String)
+    #p data[0].is_a?(Integer)
+    return [data] if !data.is_a?(Array)
+
+    flattened=[]
+    data.each do |el|
+        flattened+=flatten(el)
+    end
+
+    flattened
+
+
+end
