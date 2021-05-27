@@ -71,3 +71,20 @@ end
 # reverse_string("c")           # => "c"
 # reverse_string("internet")    # => "tenretni"
 # reverse_string("friends")     # => "sdneirf"
+def reverse_string(str)
+
+    return str if str.length==1 ||str.length==0
+
+    str[-1]+reverse_string(str.chop)
+
+end
+# A 1-dimensional array is also known as a flattened array.
+# Write a method, flatten(data), that accepts a single argument. The
+# method should take in an array of any dimension and return the flattened
+# version of that array. Solve this recursively.
+#   
+# Hint:
+#  - if the argument is not an array, then we have reached the base case
+#  - look up the documentation for how to check if data is an array or not
+#
+# Examples:
