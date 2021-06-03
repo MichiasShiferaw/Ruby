@@ -4,7 +4,7 @@ class Dog
         @breed=breed
         @age=age
         @bark=bark
-        @favorite_foods=favorite_food
+        @favorite_foods=favorite_foods
     end
 
     def name
